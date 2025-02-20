@@ -1,1 +1,3 @@
 # COMP3400-Team-3-Hospital-Management-System
+Welcome to the COMP3400 Team 3 Hospital Management System developed by Mustafa, Murtaza and Spondon.
+More information to come later...
