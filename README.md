@@ -13,8 +13,8 @@ Use this link: https://www.fltk.org/
 This will allow you to grab their tar files or simply use their git link if possible. One of the 2 options will be enough
 
 For Linux/MacOS:
-sudo apt install libfltk1.3-dev  # Ubuntu/Debian
-brew install fltk                # macOS
+sudo apt install libfltk1.3-dev
+brew install fltk                 
 One of these commands depending on your operating system will allow you to download the FLTK GUI.
 
 ## Core classes for this Hospital Management System
