@@ -9,12 +9,10 @@ This project uses a GUI when compiling this repository. Please have fltk downloa
 ## Install the FLTK GUI onto your Operating System
 As mentioned this project uses the FLTK commands as our GUI base. To install the FLTK onto your operating system here are the steps required:
 For Windows:
-Use this link: https://www.fltk.org/
-This will allow you to grab their tar files or simply use their git link if possible. One of the 2 options will be enough
+Use this link: https://www.fltk.org/. This will allow you to grab their tar files or simply use their git link if possible. One of the 2 options will be enough
 
 For Linux/MacOS:
-sudo apt install libfltk1.3-dev
-brew install fltk                 
+sudo apt install libfltk1.3-dev (Linux) OR brew install fltk (MacOS)                
 One of these commands depending on your operating system will allow you to download the FLTK GUI.
 
 ## Core classes for this Hospital Management System
