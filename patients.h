@@ -16,8 +16,8 @@ private:
     string P_Phone;        // // String instead of long int since we can just parse it later
     string P_Disease;      // Paitent's Illness
     string P_Treatment;    // Paitent's required treatment
-    double P_Payment_Info; // // Should probbaly rename
-    double P_Salary;       // // Dont know why we have this one?
+    double P_Payment_Info; // // Should probbaly rename (rename to P_Billed)
+    //double P_Salary;       // // Dont know why we have this one?
     bool P_Checkin;        // Paitent checked in status
     int P_DaysAdmmited;    // Number of days Admmited
 
@@ -32,11 +32,12 @@ public:
     void Update_Phone(string id, string phone);
     void Update_Disease(string id, string illness);
     void Update_Treatment(string id, string treat);
-    void Update_Payment_Info(string id, double info);
+    void Update_Payment_Info(string id, double info); //rename to Update_Billed
     void Update_Checkin(string id, bool checkedin);
     void Update_DaysAdmmited(string id, int days);
     // funtions to update vars
 
+    //
     void Charge_Patient(string id);
     // funtion to issue a bill to the paitent
 
