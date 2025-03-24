@@ -16,14 +16,14 @@ private:
     string P_Phone;        // // String instead of long int since we can just parse it later
     string P_Disease;      // Paitent's Illness
     string P_Treatment;    // Paitent's required treatment
-    double P_Payment_Info; // // Should probbaly rename (rename to P_Billed)
+    double P_Billed; // // Should probbaly rename (rename to P_Billed)
     //double P_Salary;       // // Dont know why we have this one?
     bool P_Checkin;        // Paitent checked in status
     int P_DaysAdmmited;    // Number of days Admmited
 
 public:
     // parametrized constructor
-    Patients(string id, string first, string last, string dob, string address, string phone, string illness, string treatment, double paymentInfo, double salary, bool checkedin, int daysAdmmit);
+    Patients(string id, string first, string last, string dob, string address, string phone, string illness, string treatment, double payment, bool checkedin, int daysAdmmit);
 
     void Relocate(string id, string P_Disease, string P_Treatment);
     // function to relocate the patient with their sickness info
@@ -34,11 +34,11 @@ public:
     void Update_Treatment(string id, string treat);
     void Update_Payment_Info(string id, double info); //rename to Update_Billed
     void Update_Checkin(string id, bool checkedin);
+
     void Update_DaysAdmmited(string id, int days);
     // funtions to update vars
 
-    //
-    void Charge_Patient(string id);
+    void Charge_Patient(string id, int days);
     // funtion to issue a bill to the paitent
 
     void Attending_Doc(string id);
