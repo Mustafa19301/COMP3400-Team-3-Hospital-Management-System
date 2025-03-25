@@ -7,7 +7,11 @@
 using namespace std;
 
 //parametrized constructor called here
-Hospitals::Hospitals(string hospitalid, string section, int cap) : Hospital_ID(hospitalid), Location(section), Capacity(cap) {}
+Hospitals::Hospitals(string hospitalid, string section, int cap) : Hospital_ID(hospitalid), Location(section), Capacity(cap) {
+    this->Hospital_ID = hospitalid;
+    this->Location = section;
+    this->Capacity = cap;
+}
 
 //loading in patients by reading filename
 void Hospitals::loadpatients(const string& filename) {
