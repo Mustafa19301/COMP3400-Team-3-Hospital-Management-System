@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+#include <random>
 using namespace std;
 
 class Pharmacies {
@@ -14,8 +16,14 @@ public:
     //parametrized constructor
     Pharmacies(string id, double salary);
 
+    static vector<string> pharmacieslist;
+    static vector<string> prescriptiondruglist;
+
+    static void createpharmacies();
+    static void Bill_Hosp(string hospitalName, string pharmaciesname, string prescriptiondrugname);
+    static void Deliver_Meds(string hospitalName, string pharmaciesname, string prescriptiondrugname);
+
     //function for billing hospital, this may need some attributes to work
-    void Bill_Hosp();
 
     //billing will be given until the patient is treated and discharged
     //follows the same path as the patients fee using random generator
@@ -25,7 +33,6 @@ public:
     //following the same path that uses the random generator (seed) to pay the pharmacy back
 
     //functin for delivering prescription drugs
-    void Deliver_Meds();
 
     //connection with the hopsital to ask for prescription drugs as it will be delivered to them
     //general prescription drugs (nothing too complicated)

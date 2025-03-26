@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "hospitals.h"
+#include "pharmacies.h"
 using namespace std;
 
 //object instances declared for the Hospitals section
@@ -101,7 +102,76 @@ void relocatepatientsection () {
 }
 
 void pharmaciessection() {
-    std::cout << "To be implemented by assgined group member" << "\n";
+    int hospitalchoice, pharmacychoice, drugchoice;
+
+    Pharmacies::createpharmacies();
+
+    std::cout << "\nSelect Hospital in which the prescription drug will be delivered to:" << "\n";
+    std::cout << "1. Windsor Regional Hospital" << "\n";
+    std::cout << "2. Erie Shore Regional Hospital" << "\n";
+    std::cout << "3. Tecumseh Regional Hospital" << "\n";
+    std::cout << "4. Kingsville Regional Hospital" << "\n";
+    std::cout << "5. Amherstburg Regional Hospital" << "\n";
+    std::cout << "6. Return" << "\n";
+    std::cout << "Enter your choice of option: ";
+    std::cin >> hospitalchoice;
+
+    if (hospitalchoice == 6) {
+        return;
+    }
+
+    string hospitalName;
+    switch (hospitalchoice) {
+        case 1:
+            hospitalName = "Windsor Regional Hospital";
+            break;
+        case 2:
+            hospitalName = "Erie Shore Regional Hospital";
+            break;
+        case 3:
+            hospitalName = "Tecumseh Regional Hospital";
+            break;
+        case 4:
+            hospitalName = "Kingsville Regional Hospital";
+            break;
+        case 5:
+            hospitalName = "Amherstburg Regional Hospital";
+            break;
+        default:
+            std::cout << "Invalid selection, returning to main menu" << "\n";
+            return;
+    }
+
+    std::cout << "\nSelect any of the 20 Pharmacies:" << "\n";
+    for (size_t i = 0; i < Pharmacies::pharmacieslist.size(); i++) {
+        std::cout << i + 1 << ". " << Pharmacies::pharmacieslist[i] << "\n";
+    }
+    std::cout << "Enter your choice of Pharmacy: ";
+    std::cin >> pharmacychoice;
+
+    if (pharmacychoice < 1 || pharmacychoice > 20) {
+        std::cout << "Invalid choice, returning to main menu" << "\n";
+        return;
+    }
+
+    string pharmacyName = Pharmacies::pharmacieslist[pharmacychoice - 1];
+
+    std::cout << "\nSelect a Prescription Drug that will be delievered:" << "\n";
+    for (size_t i = 0; i < Pharmacies::prescriptiondruglist.size(); i++) {
+        std::cout << i + 1 << ". " << Pharmacies::prescriptiondruglist[i] << "\n";
+    }
+    std::cout << "Enter your choice of Prescription Drug: ";
+    std::cin >> drugchoice;
+
+    if (drugchoice < 1 || drugchoice > 10) {
+        std::cout << "Invalid choice, returning to main menu" << "\n";
+        return;
+    }
+
+    string drugName = Pharmacies::prescriptiondruglist[drugchoice - 1];
+
+    Pharmacies::Deliver_Meds(hospitalName, pharmacyName, drugName);
+    Pharmacies::Bill_Hosp(hospitalName, pharmacyName, drugName);
 }
 
 void patientssection() {
