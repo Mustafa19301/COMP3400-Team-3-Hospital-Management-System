@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <fstream>
 #include "hospitals.h"
 #include "pharmacies.h"
 using namespace std;
@@ -174,6 +175,28 @@ void pharmaciessection() {
     Pharmacies::Bill_Hosp(hospitalName, pharmacyName, drugName);
 }
 
+//prints the pharmacybill records that were placed in the pharmacy section
+void pharmacybillrecords() {
+    ifstream inputfile("pharmacybilling.txt");
+    if (!inputfile) {
+        std::cout << "No pharmacy billing records found at the moment..." << "\n";
+        return;
+    }
+
+    if (inputfile.peek() == ifstream::traits_type::eof()) {
+        std::cout << "No pharmacy billing records found at the momment..." << "\n";
+        inputfile.close();
+        return;
+    }
+
+    string line;
+    std::cout << "\nPharmacy Billing Records" << "\n";
+    while (getline(inputfile, line)) {
+        std::cout << line << "\n";
+    }
+    inputfile.close();
+}
+
 void patientssection() {
     std::cout << "To be implemented by assgined group member" << "\n";
 }
@@ -209,10 +232,11 @@ int main(int argc, char* argv[]) {
         std::cout << "1. Hospital" << "\n";
         std::cout << "2. Relocate Patient" << "\n";
         std::cout << "3. Pharmacies" << "\n";
-        std::cout << "4. Patients" << "\n";
-        std::cout << "5. Doctors" << "\n";
-        std::cout << "6. Nurses" << "\n";
-        std::cout << "7. Exit System" << "\n";
+        std::cout << "4. Pharmacies Billing Records" << "\n";
+        std::cout << "5. Patients" << "\n";
+        std::cout << "6. Doctors" << "\n";
+        std::cout << "7. Nurses" << "\n";
+        std::cout << "8. Exit System" << "\n";
         std::cout << "Enter your choice of option: ";
         std::cin >> choice;
 
@@ -227,21 +251,24 @@ int main(int argc, char* argv[]) {
                 pharmaciessection();
                 break;
             case 4:
+                pharmacybillrecords();
+                break;    
+            case 5:
                 patientssection();
                 break;
-            case 5:
+            case 6:
                 doctorsection();
                 break;
-            case 6:
+            case 7:
                 nursesection();
                 break;
-            case 7:
+            case 8:
                 std::cout << "Exiting Hospital Management System..." << "\n";
                 break;
             default:
                 std::cout << "Invalid choice, please enter a valid choice" << "\n";
         }
-    } while (choice !=7);
+    } while (choice !=8);
     
     return 0;
 }

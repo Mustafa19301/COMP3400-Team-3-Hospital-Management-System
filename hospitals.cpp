@@ -53,10 +53,13 @@ void Hospitals::loadpatients(const string& filename) {
         if (count >= startIndex && count < endIndex) {
             istringstream iss(line);
             Patient p;
+            string checkinStr;
             iss >> std::quoted(p.id) >> std::quoted(p.fname) >> std::quoted(p.lname) >> std::quoted(p.dob) 
                 >> std::quoted(p.address) >> std::quoted(p.phone) >> std::quoted(p.disease) >> std::quoted(p.treatment) 
-                >> p.billed >> p.checkin >> p.daysAdmitted;
+                >> p.billed >> checkinStr >> p.daysAdmitted;
         
+            p.checkin = (checkinStr == "True");
+
             hospitalData[Location].push_back(p);
         }
         count++;
@@ -71,7 +74,8 @@ void Hospitals::listpatients() {
     for (const auto& p: hospitalData[Location]) {
         std::cout << "ID: " << p.id << " | Name: " << p.fname << " " << p.lname << " | Date of Birth: " 
             << p.dob << " | Address: " << p.address << " | Phone Num: " << p.phone << " | Disease: " << p.disease 
-            << " | Treatment: " << p.treatment << " | Days Admitted: " << p.daysAdmitted << "\n";
+            << " | Treatment: " << p.treatment << " | Billed: $" << p.billed << " | Checkin status: " << (p.checkin ? "True" : "False")
+            << " | Days Admitted: " << p.daysAdmitted << "\n";
     }
 }
 

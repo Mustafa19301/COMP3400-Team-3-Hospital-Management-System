@@ -1,5 +1,6 @@
 #include "pharmacies.h"
 #include <vector>
+#include <fstream>
 using namespace std;
 
 //create the vectors to hold string lists
@@ -40,8 +41,18 @@ void Pharmacies::Bill_Hosp(string hospitalName, string pharmaciesname, string pr
     static uniform_int_distribution<int> dist(100, 500);
 
     int billamount = dist(gen);
-    std::cout << pharmaciesname << " billed " << hospitalName << " $" << billamount << " for " << prescriptiondrugname << "\n";
+    string billmessage = pharmaciesname + " billed " + hospitalName + " $" + to_string(billamount) + " for " + prescriptiondrugname + "\n";
 
     int hospitalpayment = dist(gen);
-    std::cout << hospitalName << " paid $" << hospitalpayment << " to " << pharmaciesname << "\n";
+    string paymessage = hospitalName + " paid $" + to_string(hospitalpayment) + " to " + pharmaciesname + "\n";
+
+    std::cout << billmessage;
+    std::cout << paymessage;
+
+    ofstream output ("pharmacybilling.txt", ios::app); 
+        if (output) {
+            output << billmessage;
+            output << paymessage;
+        }
+        output.close();
 }
