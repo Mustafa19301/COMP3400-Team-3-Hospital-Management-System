@@ -23,7 +23,7 @@ private:
 
 public:
     // parametrized constructor
-    Patients(string id, string first, string last, string dob, string address, string phone, string illness, string treatment, double payment, bool checkedin, int daysAdmmit);
+    Patients(string id, string first, string last, string dob, string address, string phone, string illness, string treatment, double paymentInfo, double salary, bool checkedin, int daysAdmmit);
 
     void Relocate(string id, string P_Disease, string P_Treatment);
     // function to relocate the patient with their sickness info
@@ -38,7 +38,7 @@ public:
     void Update_DaysAdmmited(string id, int days);
     // funtions to update vars
 
-    void Charge_Patient(string id, int days);
+    void Charge_Patient(string ids);
     // funtion to issue a bill to the paitent
 
     void Attending_Doc(string id);

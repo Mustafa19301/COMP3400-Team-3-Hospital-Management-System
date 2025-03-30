@@ -10,7 +10,7 @@ Patients::Patients(string id, string first, string last, string dob, string addr
     this->P_Phone = phone;
     this->P_Disease = illness;
     this->P_Treatment = treatment;
-    this->P_Payment_Info = paymentInfo;
+    this->P_Billed = paymentInfo;
     
     //fix later
     //this->P_Salary = salary;
@@ -79,7 +79,7 @@ void Patients::Update_Payment_Info(string id, double info)
 {
     if (this->Patient_ID == id)
     {
-        this->P_Payment_Info = info;
+        this->P_Billed = info;
     }
     else
     {
