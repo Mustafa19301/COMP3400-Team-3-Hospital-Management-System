@@ -1,2 +1,8 @@
 Old Town Pharmacy billed Amherstburg Regional Hospital $229 for Insulin
 Amherstburg Regional Hospital paid $302 to Old Town Pharmacy
+
+Oasis Pharmacy billed Windsor Regional Hospital $134 for Chemotherapy Drugs
+Windsor Regional Hospital paid $419 to Oasis Pharmacy
+
+Amherstburg Pharmacy billed Tecumseh Regional Hospital $374 for Ibuprofen
+Tecumseh Regional Hospital paid $299 to Amherstburg Pharmacy

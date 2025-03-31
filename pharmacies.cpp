@@ -41,7 +41,7 @@ void Pharmacies::Bill_Hosp(string hospitalName, string pharmaciesname, string pr
     static uniform_int_distribution<int> dist(100, 500);
 
     int billamount = dist(gen);
-    string billmessage = pharmaciesname + " billed " + hospitalName + " $" + to_string(billamount) + " for " + prescriptiondrugname + "\n";
+    string billmessage = "\n" + pharmaciesname + " billed " + hospitalName + " $" + to_string(billamount) + " for " + prescriptiondrugname + "\n";
 
     int hospitalpayment = dist(gen);
     string paymessage = hospitalName + " paid $" + to_string(hospitalpayment) + " to " + pharmaciesname + "\n";

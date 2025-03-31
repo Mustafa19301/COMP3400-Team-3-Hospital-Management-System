@@ -4,6 +4,7 @@
 #include <iomanip>
 #include <vector>
 #include <map>
+#include <algorithm>
 using namespace std;
 
 //parametrized constructor called here
@@ -126,7 +127,7 @@ void Hospitals::relocatepatient() {
     destinationHospital->hospitalData[destinationHospital->Location].push_back(relocatingpatient);
 
     //prints confirmation message stating that patient has successfully relocated
-    std::cout << "Patient ID " << patientID << " relocated to " << newHospital << "\n.";
+    std::cout << "Patient ID " << patientID << " relocated to " << newHospital << "\n";
 }
 
 void Hospitals::Admit(){

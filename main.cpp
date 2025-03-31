@@ -5,104 +5,142 @@
 #include "pharmacies.h"
 using namespace std;
 
-//object instances declared for the Hospitals section
+
+/*
+Auth: Spondon
+Reason: stuff like "20/" will cause the program to loop like infinitly and spaz out so this will make it so only number will be accepted and not spaz out
+        Also at the top so it will be in the scope
+*/
+int getSafeIntInput(const string &prompt)
+{
+    int value;
+    while (true)
+    {
+        cout << prompt;
+        cin >> value;
+
+        if (cin.fail())
+        {
+            cin.clear();                                         // clear the error flags
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // discard bad input
+            cout << "Invalid input. Please enter a valid number.\n";
+        }
+        else
+        {
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // discard leftover input
+            return value;
+        }
+    }
+}
+
+
+// object instances declared for the Hospitals section
 Hospitals Windsor("H001", "Windsor Regional Hospital", 20);
 Hospitals Erie("H002", "Erie Shore Regional Hospital", 20);
 Hospitals Tecumseh("H003", "Tecumseh Regional Hospital", 20);
 Hospitals Kingsville("H004", "Kingsville Regional Hospital", 20);
 Hospitals Amherstburg("H005", "Amherstburg Regional Hospital", 20);
 
-
-//function for the hopsitals window
-void hospitalsection() {
+// function for the hopsitals window
+void hospitalsection()
+{
     std::cout << "\nHospitals Location (100 Patients total)" << "\n";
     int choicev1;
-    do {
+    do
+    {
         std::cout << "1. Windsor Regional Hospital" << "\n";
         std::cout << "2. Erie Shore Regional Hospital" << "\n";
         std::cout << "3. Tecumseh Regional Hospital" << "\n";
         std::cout << "4. Kingsville Regional Hospital" << "\n";
         std::cout << "5. Amherstburg Regional Hospital" << "\n";
         std::cout << "6. Return" << "\n";
-        std::cout << "Enter your choice of option: ";
-        std::cin >> choicev1;
+        // std::cout << "Enter your choice of option: ";
+        // std::cin >> choicev1;
 
-        switch (choicev1) {
-            case 1:
-                std::cout << "Selected Windsor Regional Hospital" << "\n";
-                Windsor.listpatients();
-                break;
-            case 2:
-                std::cout << "Selected Erie Shore Regional Hospital" << "\n";
-                Erie.listpatients();
-                break;
-            case 3:
-                std::cout << "Selected Tecumseh Regional Hospital" << "\n";
-                Tecumseh.listpatients();
-                break;
-            case 4:
-                std::cout << "Selected Kingsville Regional Hospital" << "\n";
-                Kingsville.listpatients();
-                break;
-            case 5:
-                std::cout << "Selected Amherstburg Regional Hospital" << "\n";
-                Amherstburg.listpatients();
-                break;
-            case 6:
-                std::cout << "Returning to Hospital Management System..." << "\n";
-                return;
-                break;
-            default:
-                std::cout << "Invalid choice, please enter a valid choice" << "\n";
+        choicev1 = getSafeIntInput("Enter your choice of option: ");
+        switch (choicev1)
+        {
+        case 1:
+            std::cout << "Selected Windsor Regional Hospital" << "\n";
+            Windsor.listpatients();
+            break;
+        case 2:
+            std::cout << "Selected Erie Shore Regional Hospital" << "\n";
+            Erie.listpatients();
+            break;
+        case 3:
+            std::cout << "Selected Tecumseh Regional Hospital" << "\n";
+            Tecumseh.listpatients();
+            break;
+        case 4:
+            std::cout << "Selected Kingsville Regional Hospital" << "\n";
+            Kingsville.listpatients();
+            break;
+        case 5:
+            std::cout << "Selected Amherstburg Regional Hospital" << "\n";
+            Amherstburg.listpatients();
+            break;
+        case 6:
+            std::cout << "Returning to Hospital Management System..." << "\n";
+            return;
+            break;
+        default:
+            std::cout << "Invalid choice, please enter a valid choice" << "\n";
         }
-    } while (choicev1 !=6);
+    } while (choicev1 != 6);
 }
 
-//function to relocate patient
-void relocatepatientsection () {
+// function to relocate patient
+void relocatepatientsection()
+{
     std::cout << "\nSelect Hospital to Relocate Patient" << "\n";
     int choicev2;
-    do {
+    do
+    {
         std::cout << "1. Windsor Regional Hospital" << "\n";
         std::cout << "2. Erie Shore Regional Hospital" << "\n";
         std::cout << "3. Tecumseh Regional Hospital" << "\n";
         std::cout << "4. Kingsville Regional Hospital" << "\n";
         std::cout << "5. Amherstburg Regional Hospital" << "\n";
         std::cout << "6. Return" << "\n";
-        std::cout << "Enter your choice of option: ";
-        std::cin >> choicev2;
-        switch (choicev2) {
-            case 1:
-                std::cout << "Selected Windsor Regional Hospital" << "\n";
-                Windsor.relocatepatient();
-                break;
-            case 2:
-                std::cout << "Selected Erie Shore Regional Hospital" << "\n";
-                Erie.relocatepatient();
-                break;
-            case 3:
-                std::cout << "Selected Tecumseh Regional Hospital" << "\n";
-                Tecumseh.relocatepatient();
-                break;
-            case 4:
-                std::cout << "Selected Kingsville Regional Hospital" << "\n";
-                Kingsville.relocatepatient();
-                break;
-            case 5:
-                std::cout << "Selected Amherstburg Regional Hospital" << "\n";
-                Amherstburg.relocatepatient();
-                break;
-            case 6:
-                std::cout << "Returning to Hospital Management System..." << "\n";
-                return;
-                break;
-            default:
-                std::cout << "Invalid choice, please enter a valid choice" << "\n";
+        // std::cout << "Enter your choice of option: ";
+        // std::cin >> choicev2;
+
+        choicev2 = getSafeIntInput("Enter your choice of option: ");
+        switch (choicev2)
+        {
+        case 1:
+            std::cout << "Selected Windsor Regional Hospital" << "\n";
+            Windsor.relocatepatient();
+            break;
+        case 2:
+            std::cout << "Selected Erie Shore Regional Hospital" << "\n";
+            Erie.relocatepatient();
+            break;
+        case 3:
+            std::cout << "Selected Tecumseh Regional Hospital" << "\n";
+            Tecumseh.relocatepatient();
+            break;
+        case 4:
+            std::cout << "Selected Kingsville Regional Hospital" << "\n";
+            Kingsville.relocatepatient();
+            break;
+        case 5:
+            std::cout << "Selected Amherstburg Regional Hospital" << "\n";
+            Amherstburg.relocatepatient();
+            break;
+        case 6:
+            std::cout << "Returning to Hospital Management System..." << "\n";
+            return;
+            break;
+        default:
+            std::cout << "Invalid choice, please enter a valid choice" << "\n";
         }
-    } while (choicev2 !=6);
+    } while (choicev2 != 6);
 }
 
-void pharmaciessection() {
+void pharmaciessection()
+{
     int hospitalchoice, pharmacychoice, drugchoice;
 
     Pharmacies::createpharmacies();
@@ -114,43 +152,48 @@ void pharmaciessection() {
     std::cout << "4. Kingsville Regional Hospital" << "\n";
     std::cout << "5. Amherstburg Regional Hospital" << "\n";
     std::cout << "6. Return" << "\n";
-    std::cout << "Enter your choice of option: ";
-    std::cin >> hospitalchoice;
-
-    if (hospitalchoice == 6) {
+    // std::cout << "Enter your choice of option: ";
+    // std::cin >> hospitalchoice;
+    hospitalchoice = getSafeIntInput("Enter your choice of option: ");
+    if (hospitalchoice == 6)
+    {
         return;
     }
 
     string hospitalName;
-    switch (hospitalchoice) {
-        case 1:
-            hospitalName = "Windsor Regional Hospital";
-            break;
-        case 2:
-            hospitalName = "Erie Shore Regional Hospital";
-            break;
-        case 3:
-            hospitalName = "Tecumseh Regional Hospital";
-            break;
-        case 4:
-            hospitalName = "Kingsville Regional Hospital";
-            break;
-        case 5:
-            hospitalName = "Amherstburg Regional Hospital";
-            break;
-        default:
-            std::cout << "Invalid selection, returning to main menu" << "\n";
-            return;
+    switch (hospitalchoice)
+    {
+    case 1:
+        hospitalName = "Windsor Regional Hospital";
+        break;
+    case 2:
+        hospitalName = "Erie Shore Regional Hospital";
+        break;
+    case 3:
+        hospitalName = "Tecumseh Regional Hospital";
+        break;
+    case 4:
+        hospitalName = "Kingsville Regional Hospital";
+        break;
+    case 5:
+        hospitalName = "Amherstburg Regional Hospital";
+        break;
+    default:
+        std::cout << "Invalid selection, returning to main menu" << "\n";
+        return;
     }
 
     std::cout << "\nSelect any of the 20 Pharmacies:" << "\n";
-    for (size_t i = 0; i < Pharmacies::pharmacieslist.size(); i++) {
+    for (size_t i = 0; i < Pharmacies::pharmacieslist.size(); i++)
+    {
         std::cout << i + 1 << ". " << Pharmacies::pharmacieslist[i] << "\n";
     }
-    std::cout << "Enter your choice of Pharmacy: ";
-    std::cin >> pharmacychoice;
+    // std::cout << "Enter your choice of Pharmacy: ";
+    // std::cin >> pharmacychoice;
+    pharmacychoice = getSafeIntInput("Enter your choice of option: ");
 
-    if (pharmacychoice < 1 || pharmacychoice > 20) {
+    if (pharmacychoice < 1 || pharmacychoice > 20)
+    {
         std::cout << "Invalid choice, returning to main menu" << "\n";
         return;
     }
@@ -158,13 +201,16 @@ void pharmaciessection() {
     string pharmacyName = Pharmacies::pharmacieslist[pharmacychoice - 1];
 
     std::cout << "\nSelect a Prescription Drug that will be delievered:" << "\n";
-    for (size_t i = 0; i < Pharmacies::prescriptiondruglist.size(); i++) {
+    for (size_t i = 0; i < Pharmacies::prescriptiondruglist.size(); i++)
+    {
         std::cout << i + 1 << ". " << Pharmacies::prescriptiondruglist[i] << "\n";
     }
-    std::cout << "Enter your choice of Prescription Drug: ";
-    std::cin >> drugchoice;
+    // std::cout << "Enter your choice of Prescription Drug: ";
+    // std::cin >> drugchoice;
+    drugchoice = getSafeIntInput("Enter your choice of option: ");
 
-    if (drugchoice < 1 || drugchoice > 10) {
+    if (drugchoice < 1 || drugchoice > 10)
+    {
         std::cout << "Invalid choice, returning to main menu" << "\n";
         return;
     }
@@ -175,15 +221,18 @@ void pharmaciessection() {
     Pharmacies::Bill_Hosp(hospitalName, pharmacyName, drugName);
 }
 
-//prints the pharmacybill records that were placed in the pharmacy section
-void pharmacybillrecords() {
+// prints the pharmacybill records that were placed in the pharmacy section
+void pharmacybillrecords()
+{
     ifstream inputfile("pharmacybilling.txt");
-    if (!inputfile) {
+    if (!inputfile)
+    {
         std::cout << "No pharmacy billing records found at the moment..." << "\n";
         return;
     }
 
-    if (inputfile.peek() == ifstream::traits_type::eof()) {
+    if (inputfile.peek() == ifstream::traits_type::eof())
+    {
         std::cout << "No pharmacy billing records found at the momment..." << "\n";
         inputfile.close();
         return;
@@ -191,26 +240,32 @@ void pharmacybillrecords() {
 
     string line;
     std::cout << "\nPharmacy Billing Records" << "\n";
-    while (getline(inputfile, line)) {
+    while (getline(inputfile, line))
+    {
         std::cout << line << "\n";
     }
     inputfile.close();
 }
 
-void patientssection() {
+void patientssection()
+{
     std::cout << "To be implemented by assgined group member" << "\n";
 }
 
-void doctorsection() {
+void doctorsection()
+{
     std::cout << "To be implemented by assgined group member" << "\n";
 }
 
-void nursesection() {
+void nursesection()
+{
     std::cout << "To be implemented by assgined group member" << "\n";
 }
 
-int main(int argc, char* argv[]) {
-    if (argc < 2){
+int main(int argc, char *argv[])
+{
+    if (argc < 2)
+    {
         std::cerr << "Error: please provide a txt file" << "\n";
         return 1;
     }
@@ -227,7 +282,8 @@ int main(int argc, char* argv[]) {
     Amherstburg.loadpatients(filename);
 
     int choice;
-    do {
+    do
+    {
         std::cout << "\nHospital Management System" << "\n";
         std::cout << "1. Hospital" << "\n";
         std::cout << "2. Relocate Patient" << "\n";
@@ -237,38 +293,41 @@ int main(int argc, char* argv[]) {
         std::cout << "6. Doctors" << "\n";
         std::cout << "7. Nurses" << "\n";
         std::cout << "8. Exit System" << "\n";
-        std::cout << "Enter your choice of option: ";
-        std::cin >> choice;
+        // std::cout << "Enter your choice of option: ";
+        // std::cin >> choice;
 
-        switch (choice) {
-            case 1:
-                hospitalsection();
-                break;
-            case 2:
-                relocatepatientsection();
-                break;
-            case 3:
-                pharmaciessection();
-                break;
-            case 4:
-                pharmacybillrecords();
-                break;    
-            case 5:
-                patientssection();
-                break;
-            case 6:
-                doctorsection();
-                break;
-            case 7:
-                nursesection();
-                break;
-            case 8:
-                std::cout << "Exiting Hospital Management System..." << "\n";
-                break;
-            default:
-                std::cout << "Invalid choice, please enter a valid choice" << "\n";
+        choice = getSafeIntInput("Enter your choice of option: ");
+
+        switch (choice)
+        {
+        case 1:
+            hospitalsection();
+            break;
+        case 2:
+            relocatepatientsection();
+            break;
+        case 3:
+            pharmaciessection();
+            break;
+        case 4:
+            pharmacybillrecords();
+            break;
+        case 5:
+            patientssection();
+            break;
+        case 6:
+            doctorsection();
+            break;
+        case 7:
+            nursesection();
+            break;
+        case 8:
+            std::cout << "Exiting Hospital Management System..." << "\n";
+            break;
+        default:
+            std::cout << "Invalid choice, please enter a valid choice" << "\n";
         }
-    } while (choice !=8);
-    
+    } while (choice != 8);
+
     return 0;
 }
