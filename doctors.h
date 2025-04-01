@@ -12,6 +12,7 @@ public:
         int id;
         std::string name;
         std::string specialty;
+        std::string hospitalName;
         std::vector<int> patientIds;
     };
 
@@ -19,8 +20,8 @@ public:
     struct Patient {
         int id;
         std::string name;
-        int primaryDoctorId = -1; 
-        std::vector<int> attendingDoctors; 
+        int primaryDoctorId = -1;
+        std::vector<int> attendingDoctors;
     };
 
     static std::vector<Doctor> doctorList;
