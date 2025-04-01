@@ -1,0 +1,21 @@
+Patient: Shin DO | ID: 11076 | Hospital: Erie Shore Regional Hospital | Days Admitted: 32
+Calculated Hospital Charge: $22812.50
+
+Patient: Raymond Frank | ID: 11071 | Hospital: Erie Shore Regional Hospital | Days Admitted: 28
+Calculated Hospital Charge: $265142.86
+
+Patient: Sinon Spn | ID: 11001 | Hospital: Erie Shore Regional Hospital | Days Admitted: 1350
+Calculated Hospital Charge: $134998650.00
+
+Patient: Anthony Vincent | ID: 11074 | Hospital: Amherstburg Regional Hospital | Days Admitted: 25
+Calculated Hospital Charge: $246413.50
+
+Patient: Catherine Sullivan | ID: 11028 | Hospital: Kingsville Regional Hospital | Days Admitted: 4
+Calculated Hospital Charge: $1113.15 (0.13x of billed amount)
+
+Patient: Jamie Gross | ID: 11052 | Hospital: Tecumseh Regional Hospital | Days Admitted: 20
+Calculated Hospital Charge: $9882.08 (1.67x of billed amount)
+
+Patient: q q | ID: 11076 | Hospital: Erie Shore Regional Hospital | Days Admitted: 92
+Calculated Hospital Charge: $202.22 (2.02x of billed amount)
+

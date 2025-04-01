@@ -5,7 +5,6 @@
 #include "pharmacies.h"
 using namespace std;
 
-
 /*
 Auth: Spondon
 Reason: stuff like "20/" will cause the program to loop like infinitly and spaz out so this will make it so only number will be accepted and not spaz out
@@ -33,7 +32,6 @@ int getSafeIntInput(const string &prompt)
     }
 }
 
-
 // object instances declared for the Hospitals section
 Hospitals Windsor("H001", "Windsor Regional Hospital", 20);
 Hospitals Erie("H002", "Erie Shore Regional Hospital", 20);
@@ -44,15 +42,16 @@ Hospitals Amherstburg("H005", "Amherstburg Regional Hospital", 20);
 // function for the hopsitals window
 void hospitalsection()
 {
-    std::cout << "\nHospitals Location (100 Patients total)" << "\n";
+    std::cout << "\nHospitals Locations" << "\n";
     int choicev1;
     do
     {
-        std::cout << "1. Windsor Regional Hospital" << "\n";
-        std::cout << "2. Erie Shore Regional Hospital" << "\n";
-        std::cout << "3. Tecumseh Regional Hospital" << "\n";
-        std::cout << "4. Kingsville Regional Hospital" << "\n";
-        std::cout << "5. Amherstburg Regional Hospital" << "\n";
+        // std::cout << "1. Windsor Regional Hospital" << ""<< "\n";
+        // std::cout << "2. Erie Shore Regional Hospital" << "\n";
+        // std::cout << "3. Tecumseh Regional Hospital" << "\n";
+        // std::cout << "4. Kingsville Regional Hospital" << "\n";
+        // std::cout << "5. Amherstburg Regional Hospital" << "\n";
+        Patients::Show_Hospital_Occupancy();
         std::cout << "6. Return" << "\n";
         // std::cout << "Enter your choice of option: ";
         // std::cin >> choicev1;
@@ -246,10 +245,61 @@ void pharmacybillrecords()
     }
     inputfile.close();
 }
-
+/*
+Auth: Spondon
+Reason: handles user input for paients
+*/
 void patientssection()
 {
-    std::cout << "To be implemented by assgined group member" << "\n";
+    int choice;
+    do
+    {
+        cout << "\nPatient Management\n";
+        cout << "------------------------------\n";
+        cout << "1. Update a Patient Information\n";
+        cout << "2. View Attending Doctor(s)\n";
+        cout << "3. View Primary Doctor\n";
+        cout << "4. Discharge a Patient\n";
+        cout << "5. Admit a Patient\n";
+        cout << "6. Search for a Patient\n";
+        cout << "7. List All Patients\n";
+        cout << "8. Return\n";
+
+        cout << "Enter your choice of option: ";
+
+        choice = getSafeIntInput("");
+
+        switch (choice)
+        {
+        case 1:
+            Patients::Update_Patient_Info();
+            break;
+        case 2:
+            Patients::Find_Attending_Doctor();
+            break;
+        case 3:
+            Patients::Find_Primary_Doctor();
+            break;
+        case 4:
+            Patients::Discharge_Patient();
+            break;
+        case 5:
+            Patients::Admit_Patient();
+            break;
+        case 6:
+            Patients::Search_Patient();
+            break;
+        case 7:
+            Patients::List_All_Patients();
+            break;
+        case 8:
+            cout << "Returning to main menu...\n";
+            break;
+        default:
+            cout << "Invalid choice, please enter a valid option.\n";
+        }
+
+    } while (choice != 8);
 }
 
 void doctorsection()
@@ -286,13 +336,13 @@ int main(int argc, char *argv[])
     {
         std::cout << "\nHospital Management System" << "\n";
         std::cout << "1. Hospital" << "\n";
-        std::cout << "2. Relocate Patient" << "\n";
-        std::cout << "3. Pharmacies" << "\n";
-        std::cout << "4. Pharmacies Billing Records" << "\n";
-        std::cout << "5. Patients" << "\n";
-        std::cout << "6. Doctors" << "\n";
-        std::cout << "7. Nurses" << "\n";
-        std::cout << "8. Exit System" << "\n";
+        // std::cout << "2. Relocate Patient" << "\n";
+        std::cout << "2. Pharmacies" << "\n";
+        std::cout << "3. Pharmacies Billing Records" << "\n";
+        std::cout << "4. Patients" << "\n";
+        std::cout << "5. Doctors" << "\n";
+        std::cout << "6. Nurses" << "\n";
+        std::cout << "7. Exit System" << "\n";
         // std::cout << "Enter your choice of option: ";
         // std::cin >> choice;
 
@@ -303,31 +353,31 @@ int main(int argc, char *argv[])
         case 1:
             hospitalsection();
             break;
+        // case 2:
+        //     relocatepatientsection();
+        //     break;
         case 2:
-            relocatepatientsection();
-            break;
-        case 3:
             pharmaciessection();
             break;
-        case 4:
+        case 3:
             pharmacybillrecords();
             break;
-        case 5:
+        case 4:
             patientssection();
             break;
-        case 6:
+        case 5:
             doctorsection();
             break;
-        case 7:
+        case 6:
             nursesection();
             break;
-        case 8:
+        case 7:
             std::cout << "Exiting Hospital Management System..." << "\n";
             break;
         default:
             std::cout << "Invalid choice, please enter a valid choice" << "\n";
         }
-    } while (choice != 8);
+    } while (choice != 7);
 
     return 0;
 }

@@ -6,3 +6,6 @@ Windsor Regional Hospital paid $419 to Oasis Pharmacy
 
 Amherstburg Pharmacy billed Tecumseh Regional Hospital $374 for Ibuprofen
 Tecumseh Regional Hospital paid $299 to Amherstburg Pharmacy
+
+West Tecumseh Pharmacy billed Kingsville Regional Hospital $304 for Chemotherapy Drugs
+Kingsville Regional Hospital paid $340 to West Tecumseh Pharmacy

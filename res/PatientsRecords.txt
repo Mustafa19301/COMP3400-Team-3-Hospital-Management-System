@@ -1,100 +1,71 @@
-"11000"  "Emily"  "Soto"  "Feb 06th 1982"  "25698 Adam Heights Suite 827"  "(998)938-8608x47042"  "Hypertension"  "Medication"  3247.09  True  14
-"11001"  "Dustin"  "Coleman"  "Oct 13th 1971"  "19918 Amanda Trail Suite 940"  "001-783-040-0872x7501"  "Flu"  "Rest and Antivirals"  8568.23  False  28
-"11002"  "Amanda"  "Rosario"  "Jan 28th 2002"  "84294 Randall Inlet Suite 961"  "951.080.8666x801"  "Breast Cancer"  "Chemotherapy"  790.97  True  6
-"11003"  "Douglas"  "Ryan"  "May 05th 2005"  "3240 Fowler Expressway"  "410-192-1334"  "Asthma"  "Inhaler Treatment"  6107.09  False  3
-"11004"  "Angela"  "Smith"  "Feb 06th 1955"  "9127 Peterson Points"  "577-698-1710"  "COVID-19"  "Isolation & Antivirals"  515.36  True  24
-"11005"  "Christina"  "Farmer"  "Aug 27th 1957"  "23449 Jeffrey Forges Suite 329"  "081.271.0098"  "Heart Disease"  "Bypass Surgery"  2646.63  False  4
-"11006"  "Ray"  "Riley"  "Dec 29th 1970"  "04346 Mooney Keys"  "001-642-746-1366x164"  "Appendicitis"  "Appendectomy"  3130.51  False  2
-"11007"  "Katherine"  "Valenzuela"  "Sep 14th 1936"  "583 Hood Views"  "+1-923-956-5476x363"  "Breast Cancer"  "Chemotherapy"  7529.22  True  18
-"11008"  "Rebecca"  "Johnson"  "Mar 27th 1966"  "667 Baird Dam Apt. 040"  "001-696-522-3303x5442"  "Asthma"  "Inhaler Treatment"  6396.37  False  11
-"11009"  "Edward"  "Moyer"  "Mar 25th 1934"  "1007 James Route"  "691-077-3098"  "Heart Disease"  "Bypass Surgery"  7856.51  True  1
-"11010"  "Amanda"  "Caldwell"  "Dec 06th 1980"  "25065 Mary Villages"  "+1-374-880-0975x83088"  "Asthma"  "Inhaler Treatment"  5186.42  True  17
-"11011"  "Mark"  "Moore"  "Jan 14th 1965"  "822 Marc Fork"  "+1-992-552-0018x267"  "Diabetes"  "Insulin Therapy"  6570.95  True  20
-"11012"  "Monique"  "Hill"  "Dec 10th 1966"  "88622 Corey Centers"  "(922)494-4980x142"  "Pneumonia"  "Antibiotics"  8039.87  False  17
-"11013"  "Jacob"  "Hanna"  "May 02th 1985"  "112 Barrera Manors Suite 579"  "901.179.6441x244"  "Hypertension"  "Medication"  1558.0  True  5
-"11014"  "Sean"  "Young"  "Jan 03th 1957"  "18849 Daniels Via"  "(304)502-8457"  "Pneumonia"  "Antibiotics"  8690.27  False  16
-"11015"  "Summer"  "Diaz"  "Aug 15th 1999"  "91508 Laurie Field"  "(269)879-2780x1122"  "Flu"  "Rest and Antivirals"  9342.11  True  28
-"11016"  "Beverly"  "Hendricks"  "Oct 29th 1981"  "7982 Collins Lodge"  "532.540.9129x7100"  "Heart Disease"  "Bypass Surgery"  9349.74  True  9
-"11017"  "Valerie"  "Spears"  "Dec 31th 1994"  "15674 Andrea Manors Apt. 167"  "094.099.1585x6052"  "COVID-19"  "Isolation & Antivirals"  8953.26  True  2
-"11018"  "Richard"  "Martin"  "May 10th 1935"  "984 Hickman Springs"  "(934)896-5616x92214"  "Flu"  "Rest and Antivirals"  5700.36  True  30
-"11019"  "John"  "Pitts"  "Dec 04th 2004"  "09110 Brown Mountain"  "962.038.2926"  "COVID-19"  "Isolation & Antivirals"  5822.79  False  28
-"11020"  "Jason"  "Gallegos"  "Aug 11th 1938"  "529 Lindsay Views Suite 797"  "+1-668-541-8712x37584"  "Diabetes"  "Insulin Therapy"  3261.84  False  11
-"11021"  "Sandra"  "Williams"  "Aug 09th 1980"  "4837 Snyder Views"  "886-277-4429x67887"  "Hypertension"  "Medication"  8165.03  False  11
-"11022"  "Matthew"  "Gibson"  "Aug 03th 2006"  "0628 Krystal Pine"  "+1-255-337-2849"  "Hypertension"  "Medication"  8341.07  False  30
-"11023"  "Sheila"  "Jackson"  "Oct 04th 1946"  "481 Erica Overpass Apt. 800"  "001-314-966-7468x1820"  "Asthma"  "Inhaler Treatment"  2803.01  True  9
-"11024"  "Morgan"  "Richardson"  "Aug 09th 1939"  "4711 Hall Lane"  "388.138.6025"  "Asthma"  "Inhaler Treatment"  9047.18  False  2
-"11025"  "Jason"  "Harmon"  "Aug 26th 1990"  "87653 Dominguez Village Apt. 603"  "001-456-020-1211x40507"  "Breast Cancer"  "Chemotherapy"  3623.53  True  29
-"11026"  "Sydney"  "Woods"  "Apr 09th 1984"  "62522 Eileen Gardens"  "+1-391-190-4637x326"  "Hypertension"  "Medication"  839.61  False  23
-"11027"  "Daniel"  "Carter"  "Dec 21th 1934"  "792 Ashley Lane Apt. 303"  "525.447.0963x157"  "Breast Cancer"  "Chemotherapy"  7870.7  False  7
-"11028"  "Catherine"  "Sullivan"  "Feb 09th 1957"  "51540 Smith Roads Apt. 069"  "001-424-978-1696"  "COVID-19"  "Isolation & Antivirals"  8348.62  False  4
-"11029"  "Candice"  "Knapp"  "Mar 31th 1975"  "75925 Simpson Park"  "+1-926-797-1767x62160"  "Asthma"  "Inhaler Treatment"  6812.32  True  3
-"11030"  "Alexander"  "Cole"  "Jun 14th 1967"  "04571 Rachel Locks"  "+1-312-261-3140x875"  "Appendicitis"  "Appendectomy"  2673.88  False  26
-"11031"  "Julie"  "Garcia"  "Jan 28th 1942"  "970 Nancy Fords Suite 925"  "001-878-784-5575x2330"  "Kidney Stones"  "Lithotripsy"  6938.65  False  1
-"11032"  "Mark"  "Little"  "Oct 09th 1995"  "282 Elizabeth Circle"  "378-701-1168x10370"  "Hypertension"  "Medication"  2055.78  False  20
-"11033"  "Susan"  "Mcdonald"  "May 20th 1976"  "01953 Myers Glen"  "211.265.0076x6804"  "Kidney Stones"  "Lithotripsy"  2852.22  True  1
-"11034"  "Candice"  "Richardson"  "Oct 07th 1956"  "941 Rebecca Expressway Suite 875"  "001-415-359-8257"  "Asthma"  "Inhaler Treatment"  1633.6  False  30
-"11035"  "Brendan"  "Mills"  "Oct 02th 1998"  "26429 Miller Ferry"  "414-759-0430"  "Kidney Stones"  "Lithotripsy"  2172.17  False  11
-"11036"  "Kenneth"  "Park"  "Mar 25th 2002"  "298 Lewis Oval Suite 791"  "001-926-975-6160"  "Pneumonia"  "Antibiotics"  7759.14  False  28
-"11037"  "Richard"  "Garcia"  "Sep 01th 1945"  "24208 Dillon Lakes Suite 140"  "678-571-1521x8154"  "Appendicitis"  "Appendectomy"  4427.45  True  3
-"11038"  "Jonathan"  "Roberts"  "Feb 28th 1988"  "8412 Michael Square Apt. 400"  "091.277.4042"  "Breast Cancer"  "Chemotherapy"  3946.31  False  24
-"11039"  "Heidi"  "Hayes"  "Jan 31th 1966"  "39007 Williams Union Suite 352"  "721-481-6578x861"  "Diabetes"  "Insulin Therapy"  7734.92  False  17
-"11040"  "Sharon"  "King"  "Feb 22th 1949"  "8938 Karen Vista"  "(840)176-9503"  "Asthma"  "Inhaler Treatment"  1083.29  True  16
-"11041"  "Charles"  "Davis"  "Oct 16th 1974"  "90502 Sean Turnpike Apt. 667"  "409.069.9523"  "Asthma"  "Inhaler Treatment"  1192.51  False  18
-"11042"  "Donald"  "Moore"  "Jun 20th 2001"  "814 Mckee Point Suite 499"  "(513)260-5229"  "Appendicitis"  "Appendectomy"  3386.9  True  5
-"11043"  "Brittney"  "Cuevas"  "Mar 30th 1943"  "5183 Bradley Glen"  "5718425621"  "Diabetes"  "Insulin Therapy"  2891.05  False  17
-"11044"  "Randy"  "Freeman"  "Feb 02th 1980"  "905 Pope Pines"  "001-052-815-8388x82721"  "Diabetes"  "Insulin Therapy"  9951.95  True  20
-"11045"  "Ashley"  "Turner"  "Apr 15th 1978"  "6887 Bell Manors"  "7559316597"  "Hypertension"  "Medication"  5754.66  False  9
-"11046"  "Kenneth"  "Garcia"  "Aug 07th 2003"  "6152 Denise Islands"  "(438)606-4314"  "COVID-19"  "Isolation & Antivirals"  6299.55  True  3
-"11047"  "Jillian"  "Jimenez"  "Nov 17th 1996"  "820 Singh Dam Apt. 157"  "(212)753-8846"  "Appendicitis"  "Appendectomy"  3047.44  True  26
-"11048"  "Katherine"  "Brooks"  "Aug 19th 2003"  "97201 Jeffrey Greens Suite 489"  "001-202-396-8946x8267"  "Pneumonia"  "Antibiotics"  8805.75  True  7
-"11049"  "Veronica"  "Lyons"  "Oct 07th 1992"  "24966 Darrell Loaf Suite 678"  "+1-971-183-1121"  "Heart Disease"  "Bypass Surgery"  4102.38  True  24
-"11050"  "Ronald"  "Davis"  "Jan 31th 1973"  "486 Sophia Circle Apt. 750"  "001-227-216-4536x39071"  "Pneumonia"  "Antibiotics"  3426.21  True  25
-"11051"  "Charles"  "Day"  "Dec 16th 1981"  "3806 Jocelyn Stream Suite 832"  "198.520.9472"  "Kidney Stones"  "Lithotripsy"  2872.5  True  19
-"11052"  "Jamie"  "Gross"  "Aug 09th 1984"  "860 Manuel Valley"  "164-529-0972x361"  "Flu"  "Rest and Antivirals"  5929.25  True  20
-"11053"  "Dawn"  "Holloway"  "Mar 29th 1977"  "0917 Davis Glen"  "4305870362"  "Hypertension"  "Medication"  2954.19  True  23
-"11054"  "Rebecca"  "Johnson"  "May 19th 1986"  "148 Diana Plain"  "211-013-9912x1314"  "Breast Cancer"  "Chemotherapy"  9184.46  True  19
-"11055"  "Robert"  "Harris"  "Oct 15th 1939"  "1842 Todd Unions Apt. 341"  "6122067950"  "Pneumonia"  "Antibiotics"  2608.67  False  2
-"11056"  "Brooke"  "Parker"  "Feb 07th 1970"  "884 Keith Club"  "(232)028-6958"  "Asthma"  "Inhaler Treatment"  6052.75  True  1
-"11057"  "Kenneth"  "Peters"  "Jan 07th 2001"  "5919 Russell Fall"  "+1-034-478-8978x613"  "Heart Disease"  "Bypass Surgery"  981.47  False  2
-"11058"  "Latasha"  "Gomez"  "Jun 16th 1943"  "8982 Joseph Stravenue Suite 284"  "1348780289"  "COVID-19"  "Isolation & Antivirals"  6998.6  True  18
-"11059"  "Mark"  "Vang"  "Nov 22th 1963"  "8407 Isaiah Unions"  "001-626-761-5128x88976"  "Heart Disease"  "Bypass Surgery"  3785.34  True  27
-"11060"  "Roger"  "Ortega"  "Apr 05th 1964"  "389 Johnson Knoll Suite 312"  "001-802-760-7216x62018"  "Heart Disease"  "Bypass Surgery"  6693.04  True  9
-"11061"  "Julie"  "Matthews"  "Dec 29th 1942"  "82769 Beard Crescent Suite 329"  "+1-922-496-1321x446"  "Flu"  "Rest and Antivirals"  3030.11  True  6
-"11062"  "Matthew"  "Diaz"  "Jul 01th 1975"  "98254 Lauren Islands"  "953-563-2650x779"  "Pneumonia"  "Antibiotics"  8689.68  False  26
-"11063"  "Pam"  "Flores"  "Jun 01th 1957"  "893 Cole Curve"  "3668306231"  "Breast Cancer"  "Chemotherapy"  7498.92  False  1
-"11064"  "Jason"  "Myers"  "Oct 08th 1957"  "7527 Garrison Mountains Suite 590"  "942-826-5852x9337"  "Hypertension"  "Medication"  7663.64  False  7
-"11065"  "Pamela"  "Oneill"  "Apr 06th 1952"  "828 Craig Bypass Suite 479"  "703.290.8081x740"  "Kidney Stones"  "Lithotripsy"  6254.4  True  17
-"11066"  "Jeffery"  "Marshall"  "Jan 21th 1947"  "02426 Fisher Track Apt. 655"  "932-195-5540x32863"  "COVID-19"  "Isolation & Antivirals"  9349.49  True  30
-"11067"  "Joseph"  "Mays"  "Apr 12th 1979"  "89009 Miller Drive"  "(192)915-5491x8965"  "Appendicitis"  "Appendectomy"  4880.0  True  30
-"11068"  "Henry"  "Parker"  "Apr 25th 1996"  "688 James Court"  "357-466-7545"  "Asthma"  "Inhaler Treatment"  8492.84  True  19
-"11069"  "Sherri"  "Stevens"  "Apr 09th 1986"  "87320 Campbell Brook"  "+1-552-083-8816x667"  "Hypertension"  "Medication"  6297.38  True  2
-"11070"  "Tonya"  "Garcia"  "Aug 14th 2002"  "415 Kim Via"  "001-527-795-1901x9698"  "Hypertension"  "Medication"  9696.22  False  10
-"11071"  "Raymond"  "Frank"  "Jan 16th 1936"  "994 Zachary Centers"  "128.458.4710x6182"  "Diabetes"  "Insulin Therapy"  742.4  False  28
-"11072"  "Gloria"  "Hawkins"  "Nov 21th 1971"  "145 Brooks Stravenue"  "(264)280-0697x604"  "Flu"  "Rest and Antivirals"  6874.57  False  17
-"11073"  "Andrew"  "Leonard"  "May 02th 1971"  "482 Hanson Circle"  "(733)684-3378"  "Appendicitis"  "Appendectomy"  7123.93  False  30
-"11074"  "Anthony"  "Vincent"  "Sep 29th 1981"  "55851 Lewis Common Apt. 142"  "(106)545-3935x545"  "Flu"  "Rest and Antivirals"  9856.54  False  25
-"11075"  "Sandra"  "White"  "Sep 25th 1970"  "16831 David Trail Apt. 382"  "001-536-471-8810x59419"  "Heart Disease"  "Bypass Surgery"  2913.12  True  20
-"11076"  "Charles"  "Wilson"  "Aug 04th 1997"  "6614 Robbins Ports Suite 853"  "+1-241-578-3166"  "Breast Cancer"  "Chemotherapy"  4884.75  True  8
-"11077"  "Michelle"  "Silva"  "Jan 29th 1977"  "104 Denise Bypass Apt. 808"  "+1-820-875-3691x2481"  "Appendicitis"  "Appendectomy"  5527.13  True  1
-"11078"  "Lisa"  "Greene"  "Feb 25th 1950"  "97297 Sharon Prairie Suite 320"  "+1-194-806-3651x4853"  "Appendicitis"  "Appendectomy"  8560.78  False  25
-"11079"  "Laura"  "Smith"  "Oct 12th 1948"  "5356 Cynthia Gardens"  "668-778-2789"  "Kidney Stones"  "Lithotripsy"  9777.78  False  1
-"11080"  "Susan"  "Walker"  "Dec 11th 1966"  "31398 Brian Well"  "5012251046"  "Flu"  "Rest and Antivirals"  8154.1  False  9
-"11081"  "Alan"  "Kelley"  "Mar 12th 1961"  "4194 Alexis Locks Apt. 245"  "551-668-4548x58328"  "Diabetes"  "Insulin Therapy"  9986.82  False  28
-"11082"  "Eugene"  "Ramirez"  "Feb 26th 1975"  "27820 Kevin Hollow"  "(776)450-5954x2786"  "Diabetes"  "Insulin Therapy"  9272.95  False  6
-"11083"  "Antonio"  "Saunders"  "Mar 28th 1973"  "216 Alexander Mews"  "759-307-3735x163"  "Breast Cancer"  "Chemotherapy"  9888.89  False  2
-"11084"  "Diane"  "Bernard"  "Jan 10th 1995"  "465 Amber Ford"  "696.342.9796"  "COVID-19"  "Isolation & Antivirals"  2980.33  False  28
-"11085"  "Kelli"  "Preston"  "Nov 09th 1982"  "2944 Moreno Gardens"  "(760)702-1098x073"  "Hypertension"  "Medication"  7446.94  True  17
-"11086"  "Susan"  "Bauer"  "Oct 05th 1969"  "933 Jared Mountain"  "001-540-972-5615x55898"  "Flu"  "Rest and Antivirals"  9357.62  False  2
-"11087"  "Kendra"  "Smith"  "Sep 09th 1962"  "718 Tran Gardens Suite 480"  "001-572-119-9338"  "Heart Disease"  "Bypass Surgery"  8665.03  False  22
-"11088"  "Elizabeth"  "Freeman"  "Jul 27th 1956"  "6884 Shawn Ranch"  "590.035.7637"  "Asthma"  "Inhaler Treatment"  7942.71  False  17
-"11089"  "Kathy"  "Medina"  "May 22th 1991"  "035 Stephanie Rue"  "842-825-2569x017"  "Kidney Stones"  "Lithotripsy"  8967.58  True  24
-"11090"  "John"  "Bryan"  "Apr 06th 1962"  "0296 Jefferson Islands Suite 938"  "783.215.6475"  "Heart Disease"  "Bypass Surgery"  9826.28  True  24
-"11091"  "Justin"  "Stuart"  "May 25th 1983"  "44160 Jose Mews"  "266.293.3096"  "Appendicitis"  "Appendectomy"  7697.22  True  29
-"11092"  "Christopher"  "Martinez"  "May 27th 1999"  "776 Chavez Trail"  "001-419-038-1789x893"  "Diabetes"  "Insulin Therapy"  8223.94  False  28
-"11093"  "Shane"  "Hodges"  "Nov 22th 1999"  "34387 Johnson Vista"  "+1-578-224-5731"  "Kidney Stones"  "Lithotripsy"  8768.67  False  10
-"11094"  "Robert"  "Horton"  "Jan 30th 1989"  "26757 Knight Springs Apt. 642"  "(116)699-0417"  "Pneumonia"  "Antibiotics"  7877.71  False  22
-"11095"  "Lauren"  "Aguirre"  "Sep 06th 1944"  "954 Kyle Walk Suite 461"  "211-209-2259x08311"  "Hypertension"  "Medication"  9139.13  True  2
-"11096"  "Erin"  "Rice"  "Jul 10th 1942"  "2797 Hunter Mountain"  "+1-595-508-4280"  "Diabetes"  "Insulin Therapy"  6099.43  False  21
-"11097"  "Jacob"  "Anderson"  "Jun 20th 1989"  "37885 Patricia Tunnel Apt. 850"  "471-373-8571"  "COVID-19"  "Isolation & Antivirals"  3450.73  True  6
-"11098"  "Michael"  "Meyer"  "Mar 05th 1984"  "9242 Dean Village"  "6724648450"  "Appendicitis"  "Appendectomy"  4783.94  False  14
-"11099"  "Justin"  "Turner"  "Oct 02th 1972"  "615 Carol Turnpike Apt. 403"  "001-134-718-8945x47802"  "Asthma"  "Inhaler Treatment"  7867.69  False  6
+"11000"  "Emily"  "Soto"  "Feb 06th 1982"  "25698 Adam Heights Suite 827"  "(998)938-8608x47042"  "Hypertension"  "Medication"  3247.09  True  14 "Windsor Regional Hospital"
+"11002"  "Amanda"  "Rosario"  "Jan 28th 2002"  "84294 Randall Inlet Suite 961"  "951.080.8666x801"  "Breast Cancer"  "Chemotherapy"  790.97  True  6 "Tecumseh Regional Hospital"
+"11003"  "Douglas"  "Ryan"  "May 05th 2005"  "3240 Fowler Expressway"  "410-192-1334"  "Asthma"  "Inhaler Treatment"  6107.09  True  3 "Kingsville Regional Hospital"
+"11004"  "Angela"  "Smith"  "Feb 06th 1955"  "9127 Peterson Points"  "577-698-1710"  "COVID-19"  "Isolation & Antivirals"  515.36  True  24 "Amherstburg Regional Hospital"
+"11005"  "Christina"  "Farmer"  "Aug 27th 1957"  "23449 Jeffrey Forges Suite 329"  "081.271.0098"  "Heart Disease"  "Bypass Surgery"  2646.63  True  4 "Windsor Regional Hospital"
+"11006"  "Ray"  "Riley"  "Dec 29th 1970"  "04346 Mooney Keys"  "001-642-746-1366x164"  "Appendicitis"  "Appendectomy"  3130.51  True  2 "Erie Shore Regional Hospital"
+"11007"  "Katherine"  "Valenzuela"  "Sep 14th 1936"  "583 Hood Views"  "+1-923-956-5476x363"  "Breast Cancer"  "Chemotherapy"  7529.22  True  18 "Tecumseh Regional Hospital"
+"11008"  "Rebecca"  "Johnson"  "Mar 27th 1966"  "667 Baird Dam Apt. 040"  "001-696-522-3303x5442"  "Asthma"  "Inhaler Treatment"  6396.37  True  11 "Kingsville Regional Hospital"
+"11009"  "Edward"  "Moyer"  "Mar 25th 1934"  "1007 James Route"  "691-077-3098"  "Heart Disease"  "Bypass Surgery"  7856.51  True  1 "Amherstburg Regional Hospital"
+"11010"  "Amanda"  "Caldwell"  "Dec 06th 1980"  "25065 Mary Villages"  "+1-374-880-0975x83088"  "Asthma"  "Inhaler Treatment"  5186.42  True  17 "Windsor Regional Hospital"
+"11011"  "Mark"  "Moore"  "Jan 14th 1965"  "822 Marc Fork"  "+1-992-552-0018x267"  "Diabetes"  "Insulin Therapy"  6570.95  True  20 "Erie Shore Regional Hospital"
+"11012"  "Monique"  "Hill"  "Dec 10th 1966"  "88622 Corey Centers"  "(922)494-4980x142"  "Pneumonia"  "Antibiotics"  8039.87  True  17 "Tecumseh Regional Hospital"
+"11013"  "Jacob"  "Hanna"  "May 02th 1985"  "112 Barrera Manors Suite 579"  "901.179.6441x244"  "Hypertension"  "Medication"  1558.0  True  5 "Kingsville Regional Hospital"
+"11014"  "Sean"  "Young"  "Jan 03th 1957"  "18849 Daniels Via"  "(304)502-8457"  "Pneumonia"  "Antibiotics"  8690.27  True  16 "Amherstburg Regional Hospital"
+"11015"  "Summer"  "Diaz"  "Aug 15th 1999"  "91508 Laurie Field"  "(269)879-2780x1122"  "Flu"  "Rest and Antivirals"  9342.11  True  28 "Windsor Regional Hospital"
+"11016"  "Beverly"  "Hendricks"  "Oct 29th 1981"  "7982 Collins Lodge"  "532.540.9129x7100"  "Heart Disease"  "Bypass Surgery"  9349.74  True  9 "Erie Shore Regional Hospital"
+"11017"  "Valerie"  "Spears"  "Dec 31th 1994"  "15674 Andrea Manors Apt. 167"  "094.099.1585x6052"  "COVID-19"  "Isolation & Antivirals"  8953.26  True  2 "Tecumseh Regional Hospital"
+"11018"  "Richard"  "Martin"  "May 10th 1935"  "984 Hickman Springs"  "(934)896-5616x92214"  "Flu"  "Rest and Antivirals"  5700.36  True  30 "Kingsville Regional Hospital"
+"11019"  "John"  "Pitts"  "Dec 04th 2004"  "09110 Brown Mountain"  "962.038.2926"  "COVID-19"  "Isolation & Antivirals"  5822.79  True  28 "Amherstburg Regional Hospital"
+"11020"  "Jason"  "Gallegos"  "Aug 11th 1938"  "529 Lindsay Views Suite 797"  "+1-668-541-8712x37584"  "Diabetes"  "Insulin Therapy"  3261.84  True  11 "Windsor Regional Hospital"
+"11021"  "Sandra"  "Williams"  "Aug 09th 1980"  "4837 Snyder Views"  "886-277-4429x67887"  "Hypertension"  "Medication"  8165.03  True  11 "Erie Shore Regional Hospital"
+"11022"  "Matthew"  "Gibson"  "Aug 03th 2006"  "0628 Krystal Pine"  "+1-255-337-2849"  "Hypertension"  "Medication"  8341.07  True  30 "Tecumseh Regional Hospital"
+"11023"  "Sheila"  "Jackson"  "Oct 04th 1946"  "481 Erica Overpass Apt. 800"  "001-314-966-7468x1820"  "Asthma"  "Inhaler Treatment"  2803.01  True  9 "Kingsville Regional Hospital"
+"11024"  "Morgan"  "Richardson"  "Aug 09th 1939"  "4711 Hall Lane"  "388.138.6025"  "Asthma"  "Inhaler Treatment"  9047.18  True  2 "Amherstburg Regional Hospital"
+"11025"  "Jason"  "Harmon"  "Aug 26th 1990"  "87653 Dominguez Village Apt. 603"  "001-456-020-1211x40507"  "Breast Cancer"  "Chemotherapy"  3623.53  True  29 "Windsor Regional Hospital"
+"11026"  "Sydney"  "Woods"  "Apr 09th 1984"  "62522 Eileen Gardens"  "+1-391-190-4637x326"  "Hypertension"  "Medication"  839.61  True  23 "Erie Shore Regional Hospital"
+"11027"  "Daniel"  "Carter"  "Dec 21th 1934"  "792 Ashley Lane Apt. 303"  "525.447.0963x157"  "Breast Cancer"  "Chemotherapy"  7870.7  True  7 "Tecumseh Regional Hospital"
+"11029"  "Candice"  "Knapp"  "Mar 31th 1975"  "75925 Simpson Park"  "+1-926-797-1767x62160"  "Asthma"  "Inhaler Treatment"  6812.32  True  3 "Amherstburg Regional Hospital"
+"11030"  "Alexander"  "Cole"  "Jun 14th 1967"  "04571 Rachel Locks"  "+1-312-261-3140x875"  "Appendicitis"  "Appendectomy"  2673.88  True  26 "Windsor Regional Hospital"
+"11031"  "Julie"  "Garcia"  "Jan 28th 1942"  "970 Nancy Fords Suite 925"  "001-878-784-5575x2330"  "Kidney Stones"  "Lithotripsy"  6938.65  True  1 "Erie Shore Regional Hospital"
+"11032"  "Mark"  "Little"  "Oct 09th 1995"  "282 Elizabeth Circle"  "378-701-1168x10370"  "Hypertension"  "Medication"  2055.78  True  20 "Tecumseh Regional Hospital"
+"11033"  "Susan"  "Mcdonald"  "May 20th 1976"  "01953 Myers Glen"  "211.265.0076x6804"  "Kidney Stones"  "Lithotripsy"  2852.22  True  1 "Kingsville Regional Hospital"
+"11034"  "Candice"  "Richardson"  "Oct 07th 1956"  "941 Rebecca Expressway Suite 875"  "001-415-359-8257"  "Asthma"  "Inhaler Treatment"  1633.6  True  30 "Amherstburg Regional Hospital"
+"11035"  "Brendan"  "Mills"  "Oct 02th 1998"  "26429 Miller Ferry"  "414-759-0430"  "Kidney Stones"  "Lithotripsy"  2172.17  True  11 "Windsor Regional Hospital"
+"11036"  "Kenneth"  "Park"  "Mar 25th 2002"  "298 Lewis Oval Suite 791"  "001-926-975-6160"  "Pneumonia"  "Antibiotics"  7759.14  True  28 "Erie Shore Regional Hospital"
+"11037"  "Richard"  "Garcia"  "Sep 01th 1945"  "24208 Dillon Lakes Suite 140"  "678-571-1521x8154"  "Appendicitis"  "Appendectomy"  4427.45  True  3 "Tecumseh Regional Hospital"
+"11038"  "Jonathan"  "Roberts"  "Feb 28th 1988"  "8412 Michael Square Apt. 400"  "091.277.4042"  "Breast Cancer"  "Chemotherapy"  3946.31  True  24 "Kingsville Regional Hospital"
+"11039"  "Heidi"  "Hayes"  "Jan 31th 1966"  "39007 Williams Union Suite 352"  "721-481-6578x861"  "Diabetes"  "Insulin Therapy"  7734.92  True  17 "Amherstburg Regional Hospital"
+"11040"  "Sharon"  "King"  "Feb 22th 1949"  "8938 Karen Vista"  "(840)176-9503"  "Asthma"  "Inhaler Treatment"  1083.29  True  16 "Windsor Regional Hospital"
+"11041"  "Charles"  "Davis"  "Oct 16th 1974"  "90502 Sean Turnpike Apt. 667"  "409.069.9523"  "Asthma"  "Inhaler Treatment"  1192.51  True  18 "Erie Shore Regional Hospital"
+"11042"  "Donald"  "Moore"  "Jun 20th 2001"  "814 Mckee Point Suite 499"  "(513)260-5229"  "Appendicitis"  "Appendectomy"  3386.9  True  5 "Tecumseh Regional Hospital"
+"11043"  "Brittney"  "Cuevas"  "Mar 30th 1943"  "5183 Bradley Glen"  "5718425621"  "Diabetes"  "Insulin Therapy"  2891.05  True  17 "Kingsville Regional Hospital"
+"11044"  "Randy"  "Freeman"  "Feb 02th 1980"  "905 Pope Pines"  "001-052-815-8388x82721"  "Diabetes"  "Insulin Therapy"  9951.95  True  20 "Amherstburg Regional Hospital"
+"11045"  "Ashley"  "Turner"  "Apr 15th 1978"  "6887 Bell Manors"  "7559316597"  "Hypertension"  "Medication"  5754.66  True  9 "Windsor Regional Hospital"
+"11046"  "Kenneth"  "Garcia"  "Aug 07th 2003"  "6152 Denise Islands"  "(438)606-4314"  "COVID-19"  "Isolation & Antivirals"  6299.55  True  3 "Erie Shore Regional Hospital"
+"11047"  "Jillian"  "Jimenez"  "Nov 17th 1996"  "820 Singh Dam Apt. 157"  "(212)753-8846"  "Appendicitis"  "Appendectomy"  3047.44  True  26 "Tecumseh Regional Hospital"
+"11048"  "Katherine"  "Brooks"  "Aug 19th 2003"  "97201 Jeffrey Greens Suite 489"  "001-202-396-8946x8267"  "Pneumonia"  "Antibiotics"  8805.75  True  7 "Kingsville Regional Hospital"
+"11049"  "Veronica"  "Lyons"  "Oct 07th 1992"  "24966 Darrell Loaf Suite 678"  "+1-971-183-1121"  "Heart Disease"  "Bypass Surgery"  4102.38  True  24 "Amherstburg Regional Hospital"
+"11050"  "Ronald"  "Davis"  "Jan 31th 1973"  "486 Sophia Circle Apt. 750"  "001-227-216-4536x39071"  "Pneumonia"  "Antibiotics"  3426.21  True  25 "Windsor Regional Hospital"
+"11051"  "Charles"  "Day"  "Dec 16th 1981"  "3806 Jocelyn Stream Suite 832"  "198.520.9472"  "Kidney Stones"  "Lithotripsy"  2872.5  True  19 "Erie Shore Regional Hospital"
+"11053"  "Dawn"  "Holloway"  "Mar 29th 1977"  "0917 Davis Glen"  "4305870362"  "Hypertension"  "Medication"  2954.19  True  23 "Kingsville Regional Hospital"
+"11054"  "Rebecca"  "Johnson"  "May 19th 1986"  "148 Diana Plain"  "211-013-9912x1314"  "Breast Cancer"  "Chemotherapy"  9184.46  True  19 "Amherstburg Regional Hospital"
+"11055"  "Robert"  "Harris"  "Oct 15th 1939"  "1842 Todd Unions Apt. 341"  "6122067950"  "Pneumonia"  "Antibiotics"  2608.67  True  2 "Windsor Regional Hospital"
+"11056"  "Brooke"  "Parker"  "Feb 07th 1970"  "884 Keith Club"  "(232)028-6958"  "Asthma"  "Inhaler Treatment"  6052.75  True  1 "Erie Shore Regional Hospital"
+"11057"  "Kenneth"  "Peters"  "Jan 07th 2001"  "5919 Russell Fall"  "+1-034-478-8978x613"  "Heart Disease"  "Bypass Surgery"  981.47  True  2 "Tecumseh Regional Hospital"
+"11058"  "Latasha"  "Gomez"  "Jun 16th 1943"  "8982 Joseph Stravenue Suite 284"  "1348780289"  "COVID-19"  "Isolation & Antivirals"  6998.6  True  18 "Kingsville Regional Hospital"
+"11059"  "Mark"  "Vang"  "Nov 22th 1963"  "8407 Isaiah Unions"  "001-626-761-5128x88976"  "Heart Disease"  "Bypass Surgery"  3785.34  True  27 "Amherstburg Regional Hospital"
+"11060"  "Roger"  "Ortega"  "Apr 05th 1964"  "389 Johnson Knoll Suite 312"  "001-802-760-7216x62018"  "Heart Disease"  "Bypass Surgery"  6693.04  True  9 "Windsor Regional Hospital"
+"11061"  "Julie"  "Matthews"  "Dec 29th 1942"  "82769 Beard Crescent Suite 329"  "+1-922-496-1321x446"  "Flu"  "Rest and Antivirals"  3030.11  True  6 "Erie Shore Regional Hospital"
+"11062"  "Matthew"  "Diaz"  "Jul 01th 1975"  "98254 Lauren Islands"  "953-563-2650x779"  "Pneumonia"  "Antibiotics"  8689.68  True  26 "Tecumseh Regional Hospital"
+"11063"  "Pam"  "Flores"  "Jun 01th 1957"  "893 Cole Curve"  "3668306231"  "Breast Cancer"  "Chemotherapy"  7498.92  True  1 "Kingsville Regional Hospital"
+"11064"  "Jason"  "Myers"  "Oct 08th 1957"  "7527 Garrison Mountains Suite 590"  "942-826-5852x9337"  "Hypertension"  "Medication"  7663.64  True  7 "Amherstburg Regional Hospital"
+"11065"  "Pamela"  "Oneill"  "Apr 06th 1952"  "828 Craig Bypass Suite 479"  "703.290.8081x740"  "Kidney Stones"  "Lithotripsy"  6254.4  True  17 "Windsor Regional Hospital"
+"11066"  "Jeffery"  "Marshall"  "Jan 21th 1947"  "02426 Fisher Track Apt. 655"  "932-195-5540x32863"  "COVID-19"  "Isolation & Antivirals"  9349.49  True  30 "Erie Shore Regional Hospital"
+"11067"  "Joseph"  "Mays"  "Apr 12th 1979"  "89009 Miller Drive"  "(192)915-5491x8965"  "Appendicitis"  "Appendectomy"  4880.0  True  30 "Tecumseh Regional Hospital"
+"11068"  "Henry"  "Parker"  "Apr 25th 1996"  "688 James Court"  "357-466-7545"  "Asthma"  "Inhaler Treatment"  8492.84  True  19 "Kingsville Regional Hospital"
+"11069"  "Sherri"  "Stevens"  "Apr 09th 1986"  "87320 Campbell Brook"  "+1-552-083-8816x667"  "Hypertension"  "Medication"  6297.38  True  2 "Amherstburg Regional Hospital"
+"11070"  "Tonya"  "Garcia"  "Aug 14th 2002"  "415 Kim Via"  "001-527-795-1901x9698"  "Hypertension"  "Medication"  9696.22  True  10 "Windsor Regional Hospital"
+"11072"  "Gloria"  "Hawkins"  "Nov 21th 1971"  "145 Brooks Stravenue"  "(264)280-0697x604"  "Flu"  "Rest and Antivirals"  6874.57  True  17 "Tecumseh Regional Hospital"
+"11073"  "Andrew"  "Leonard"  "May 02th 1971"  "482 Hanson Circle"  "(733)684-3378"  "Appendicitis"  "Appendectomy"  7123.93  True  30 "Kingsville Regional Hospital"
+"11075" "Shiro" "Spn" "yes" "yes" "yes" "yes" "no" 0 True 32765 "Windsor Regional Hospital"
