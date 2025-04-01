@@ -254,7 +254,69 @@ void patientssection()
 
 void doctorsection()
 {
-    std::cout << "To be implemented by assgined group member" << "\n";
+    std::cout << "\nDoctor Management Section" << "\n";
+    int choice;
+    do {
+        std::cout << "1. List all doctors" << "\n";
+        std::cout << "2. View doctor details" << "\n";
+        std::cout << "3. Assign doctor to a patient" << "\n";
+        std::cout << "4. Assign primary doctor to a patient" << "\n";
+        std::cout << "5. Assign attending doctor to a patient" << "\n";
+        std::cout << "6. View patient details" << "\n";
+        std::cout << "7. Return to main menu" << "\n";
+        std::cout << "Enter your choice of option: ";
+        std::cin >> choice;
+
+        switch (choice) {
+            case 1:
+                // Call the method to list all doctors
+                Doctors::listDoctors();
+                break;
+            case 2:
+                // View doctor details
+                int doctorId;
+                std::cout << "Enter Doctor ID: ";
+                std::cin >> doctorId;
+                Doctors::viewDoctorDetails(doctorId);
+                break;
+            case 3:
+                // Assign doctor to a patient
+                int patientId;
+                std::cout << "Enter Patient ID: ";
+                std::cin >> patientId;
+                std::cout << "Enter Doctor ID: ";
+                std::cin >> doctorId;
+                Doctors::assignDoctorToPatient(patientId, doctorId);
+                break;
+            case 4:
+                // Assign primary doctor to a patient
+                std::cout << "Enter Patient ID: ";
+                std::cin >> patientId;
+                std::cout << "Enter Doctor ID: ";
+                std::cin >> doctorId;
+                Doctors::assignPrimaryDoctor(patientId, doctorId);
+                break;
+            case 5:
+                // Assign attending doctor to a patient
+                std::cout << "Enter Patient ID: ";
+                std::cin >> patientId;
+                std::cout << "Enter Doctor ID: ";
+                std::cin >> doctorId;
+                Doctors::assignAttendingDoctor(patientId, doctorId);
+                break;
+            case 6:
+                // View patient details
+                std::cout << "Enter Patient ID: ";
+                std::cin >> patientId;
+                Doctors::viewPatientDetails(patientId);
+                break;
+            case 7:
+                std::cout << "Returning to main menu..." << "\n";
+                return;
+            default:
+                std::cout << "Invalid choice, please enter a valid choice" << "\n";
+        }
+    } while (choice != 7);
 }
 
 void nursesection()
