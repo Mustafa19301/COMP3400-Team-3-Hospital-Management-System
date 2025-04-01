@@ -11,6 +11,8 @@
 #include <algorithm>
 #include <limits>
 
+#include "doctors.h"
+
 using namespace std;
 
 Patients::Patients(string id, string first, string last, string dob, string address, string phone,
@@ -225,30 +227,98 @@ void Patients::Update_Patient_Info()
     Auth:Spondon
     reason : in name
 */
-void Patients::Find_Attending_Doctor()
+void Patients::Find_Primary_Doctor()
 {
-    string id;
-    cout << "Enter Patient ID to find attending doctor(s): ";
-    cin >> id;
+    string inputID;
+    cout << "Enter Patient ID to find primary doctor: ";
+    cin >> inputID;
 
-    // 🔧 Placeholder logic
-    // You would eventually pull this from a real doctor-patient assignment
-    cout << "Attending doctors for patient " << id << ":\n";
-    cout << "- Dr. Amanda Jones\n";
-    cout << "- Dr. Kevin Lee\n";
+    int patientID;
+    try {
+        patientID = stoi(inputID);
+    } catch (...) {
+        cout << "Invalid ID format.\n";
+        return;
+    }
+
+    for (const auto& patient : Doctors::patientList)
+    {
+        if (patient.id == patientID)
+        {
+            if (patient.primaryDoctorId == -1)
+            {
+                cout << "No primary doctor assigned for Patient ID " << patientID << ".\n";
+                return;
+            }
+
+            for (const auto& doc : Doctors::doctorList)
+            {
+                if (doc.id == patient.primaryDoctorId)
+                {
+                    cout << "Primary Doctor for Patient ID " << patientID << ": " << doc.name
+                         << " (Specialty: " << doc.specialty << ", Hospital: " << doc.hospitalName << ")\n";
+                    return;
+                }
+            }
+
+            cout << "Primary doctor ID found, but doctor details missing.\n";
+            return;
+        }
+    }
+
+    cout << "Patient with ID " << patientID << " not found.\n";
 }
 /*
     Auth:Spondon
     reason : in name
 */
-void Patients::Find_Primary_Doctor()
+void Patients::Find_Attending_Doctor()
 {
-    string id;
-    cout << "Enter Patient ID to find primary doctor: ";
-    cin >> id;
+    string inputID;
+    cout << "Enter Patient ID to find attending doctor(s): ";
+    cin >> inputID;
 
-    // 🔧 Placeholder logic
-    cout << "Primary doctor for patient " << id << ": Dr. Amanda Jones\n";
+    int patientID;
+    try {
+        patientID = stoi(inputID);
+    } catch (...) {
+        cout << "Invalid ID format.\n";
+        return;
+    }
+
+    for (const auto& patient : Doctors::patientList)
+    {
+        if (patient.id == patientID)
+        {
+            if (patient.attendingDoctors.empty())
+            {
+                cout << "No attending doctors assigned for Patient ID " << patientID << ".\n";
+                return;
+            }
+
+            cout << "Attending Doctors for Patient ID " << patientID << ":\n";
+
+            for (int docId : patient.attendingDoctors)
+            {
+                auto it = find_if(Doctors::doctorList.begin(), Doctors::doctorList.end(),
+                                  [&](const Doctors::Doctor& d) { return d.id == docId; });
+
+                if (it != Doctors::doctorList.end())
+                {
+                    cout << " - " << it->name
+                         << " (Specialty: " << it->specialty << ", Hospital: " << it->hospitalName << ")\n";
+                }
+                else
+                {
+                    cout << " - Doctor ID " << docId << " (Details not found)\n";
+                }
+            }
+
+            return;
+        }
+    }
+
+    cout << "Patient with ID " << patientID << " not found.\n";
 }
 /*
     Auth:Spondon
