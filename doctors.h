@@ -12,15 +12,16 @@ public:
         int id;
         std::string name;
         std::string specialty;
-        std::vector<int> patientIds; // List of patient IDs assigned to the doctor
+        std::string hospitalName;
+        std::vector<int> patientIds;
     };
 
     // Define the Patient struct
     struct Patient {
         int id;
         std::string name;
-        int primaryDoctorId = -1;  // Default value for the primary doctor ID
-        std::vector<int> attendingDoctors;  // List of attending doctors
+        int primaryDoctorId = -1;
+        std::vector<int> attendingDoctors;
     };
 
     static std::vector<Doctor> doctorList;
