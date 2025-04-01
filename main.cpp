@@ -263,7 +263,8 @@ void patientssection()
         cout << "5. Admit a Patient\n";
         cout << "6. Search for a Patient\n";
         cout << "7. List All Patients\n";
-        cout << "8. Return\n";
+        cout << "8. Relocate a Paitent\n";
+        cout << "9. Return\n";
 
         cout << "Enter your choice of option: ";
 
@@ -293,13 +294,16 @@ void patientssection()
             Patients::List_All_Patients();
             break;
         case 8:
+            Patients::Relocate_Patient();
+            break;
+        case 9:
             cout << "Returning to main menu...\n";
             break;
         default:
             cout << "Invalid choice, please enter a valid option.\n";
         }
 
-    } while (choice != 8);
+    } while (choice != 9);
 }
 
 void doctorsection()
