@@ -288,7 +288,7 @@ void Patients::Discharge_Patient()
             found = true;
             // Rebuild discharged line for archive
             ostringstream oss;
-            for (int i = 0; i < tokens.size(); ++i)
+            for (size_t i = 0; i < tokens.size(); ++i)
             {
                 if (i > 0)
                     oss << " ";
@@ -465,7 +465,7 @@ void Patients::List_All_Patients()
         string disease = tokens[6];
         string treatment = tokens[7];
         double billed = stod(tokens[8]);
-        bool checkin = (tokens[9] == "True");
+        //bool checkin = (tokens[9] == "True");
         int daysAdmitted = stoi(tokens[10]);
         string hospitalName = tokens[11];
 
