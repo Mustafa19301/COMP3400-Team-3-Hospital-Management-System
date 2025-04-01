@@ -3,6 +3,9 @@
 #include <fstream>
 #include "hospitals.h"
 #include "pharmacies.h"
+#include "doctors.h"
+#include "nurses.h"
+#inlcude "patients.h"
 using namespace std;
 
 /*
