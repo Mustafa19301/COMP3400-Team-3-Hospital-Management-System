@@ -5,7 +5,7 @@
 #include "pharmacies.h"
 #include "doctors.h"
 #include "nurses.h"
-#inlcude "patients.h"
+#include "patients.h"
 using namespace std;
 
 /*
