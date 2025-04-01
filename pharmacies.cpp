@@ -1,6 +1,8 @@
 #include "pharmacies.h"
 #include <vector>
 #include <fstream>
+#include <thread>
+#include <chrono>
 using namespace std;
 
 //create the vectors to hold string lists
@@ -30,15 +32,19 @@ void Pharmacies::createpharmacies() {
 
 //function for delivering prescription drugs to hopsital (connection to hospital)
 void Pharmacies::Deliver_Meds(string hospitalName, string pharmaciesname, string prescriptiondrugname) {
+    std::cout << "\n" << pharmaciesname << " is preparing " << prescriptiondrugname << " for delivery" << "...\n";
+    std::this_thread::sleep_for(std::chrono::seconds(3));
     std::cout << "\n" << pharmaciesname << " is delivering " << prescriptiondrugname << " to " << hospitalName << "...\n";
-    std::cout << "Delivery of the prescription drug was successful!" << "\n";
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    std::cout << "\n" << "Delivery of the prescription drug was successful!" << "\n";
+    std::this_thread::sleep_for(std::chrono::seconds(3));
 }
 
 //function for pharmacy to bill hospital, hospital then pays back to pharmacy
 void Pharmacies::Bill_Hosp(string hospitalName, string pharmaciesname, string prescriptiondrugname) {
     static random_device rd;
     static mt19937 gen(rd());
-    static uniform_int_distribution<int> dist(100, 500);
+    static uniform_int_distribution<int> dist(250, 500);
 
     int billamount = dist(gen);
     string billmessage = "\n" + pharmaciesname + " billed " + hospitalName + " $" + to_string(billamount) + " for " + prescriptiondrugname + "\n";
