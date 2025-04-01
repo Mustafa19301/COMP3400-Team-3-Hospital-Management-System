@@ -371,7 +371,52 @@ void doctorsection()
 
 void nursesection()
 {
-    std::cout << "To be implemented by assgined group member" << "\n";
+    std::cout << "\nNurse Management Section" << "\n";
+    int choice;
+    do {
+        std::cout << "1. List all nurses" << "\n";
+        std::cout << "2. View nurse details" << "\n";
+        std::cout << "3. Assign nurse to a patient" << "\n";
+        std::cout << "4. View patient details" << "\n";
+        std::cout << "5. Return to main menu" << "\n";
+        std::cout << "Enter your choice of option: ";
+        std::cin >> choice;
+
+        switch (choice) {
+            case 1:
+                // Call the method to list all nurses
+                Nurses::listNurses();
+                break;
+            case 2:
+                // View nurse details
+                int nurseId;
+                std::cout << "Enter Nurse ID: ";
+                std::cin >> nurseId;
+                Nurses::viewNurseDetails(nurseId);
+                break;
+            case 3:
+                // Assign nurse to a patient
+                int patientId;
+                std::cout << "Enter Patient ID: ";
+                std::cin >> patientId;
+                std::cout << "Enter Nurse ID: ";
+                std::cin >> nurseId;
+                Nurses::assignNurseToPatient(patientId, nurseId);
+                break;
+            case 4:
+                // View patient details
+                std::cout << "Enter Patient ID: ";
+                std::cin >> patientId;
+                Nurses::viewPatientDetails(patientId);
+                break;
+            case 5:
+                std::cout << "Returning to main menu..." << "\n";
+                break;
+            default:
+                std::cout << "Invalid choice, please enter a valid choice" << "\n";
+                break;
+        }
+    } while (choice != 5);
 }
 
 int main(int argc, char *argv[])
