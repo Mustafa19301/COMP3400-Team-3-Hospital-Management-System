@@ -8,5 +8,23 @@ This project is focused on using a text-based that will use the console terminal
 
 ## Core classes for this Hospital Management System
 The management system will operate core classes such as Hospitals, Patients, Doctors, Pharmacies & Nurses. Each of these core classes have their own purpose that will be implemented onto the main code.
-The implementation will focus on the system managing the core classes
-More information to come later...
+
+## Files in this Repository
+- `res/PatientsRecords.txt`
+- `res/PatientBillingRecords.txt`
+- `res/ArchivedPatientRecords.txt`
+- `.gitignore`
+- `main.cpp`
+- `hospitals.cpp`
+- `hospitals.h`
+- `pharmacies.cpp`
+- `pharmacies.h`
+- `patients.cpp`
+- `patients.h`
+- `doctors.cpp`
+- `doctors.h`
+- `nurses.cpp`
+- `nurses.h`
+- `PatientsRecords.txt`
+- `pharmacybilling.txt`
+- `README.md`
