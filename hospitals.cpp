@@ -4,6 +4,8 @@
 #include <iomanip>
 #include <vector>
 #include <map>
+#include <thread>
+#include <chrono>
 #include <algorithm>
 using namespace std;
 
@@ -128,6 +130,7 @@ void Hospitals::listpatients()
         }
     }
 
+    std::this_thread::sleep_for(std::chrono::seconds(3));
     file.close();
 }
 
@@ -135,13 +138,13 @@ void Hospitals::relocatepatient()
 {
     // implementation of the relocate patient will go here
 
-    // its in paients.cpp
+    // its in patients.cpp
 }
 void Hospitals::Admit()
 {
     // implementation of the admit patient will go here
 
-    // its in paients.cpp
+    // its in patients.cpp
 }
 
 // void Hospitals::Pay(double x, string id){

@@ -684,7 +684,7 @@ void Patients::Admit_Patient()
     cout << "Patient " << fname << " " << lname << " successfully admitted to " << selectedHospital << ".\n";
 }
 /*
-    Auth: Spondon
+    Auth: Spondon (Originally Mustafa)
     Reason: Reads from file instead of memory
             makes it so changes are reflected in file
                 so when next instance of program is made it isnt reset to orgin hospital

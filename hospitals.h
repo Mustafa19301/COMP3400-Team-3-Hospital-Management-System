@@ -7,14 +7,6 @@
 #include <map>
 using namespace std;
 
-// struct Patient {
-//     string id, fname, lname, dob, address, phone, disease, treatment;
-//     double billed;
-//     bool checkin;
-//     int daysAdmitted;
-//     string hospital;
-// };
-
 class Hospitals {
 private:
     string Hospital_ID;
@@ -32,7 +24,6 @@ public:
     void Pay (double x, string ID);
 
     //this function uses void to admit patient
-    //exisiting patients and new patients
     void Admit();
 };
 

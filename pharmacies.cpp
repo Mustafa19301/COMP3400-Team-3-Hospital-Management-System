@@ -52,8 +52,11 @@ void Pharmacies::Bill_Hosp(string hospitalName, string pharmaciesname, string pr
     int hospitalpayment = dist(gen);
     string paymessage = hospitalName + " paid $" + to_string(hospitalpayment) + " to " + pharmaciesname + "\n";
 
+    std::this_thread::sleep_for(std::chrono::seconds(3));
     std::cout << billmessage;
+    std::this_thread::sleep_for(std::chrono::seconds(3));
     std::cout << paymessage;
+    std::this_thread::sleep_for(std::chrono::seconds(3));
 
     ofstream output ("pharmacybilling.txt", ios::app); 
         if (output) {

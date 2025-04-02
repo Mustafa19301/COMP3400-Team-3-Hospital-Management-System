@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <chrono>
+#include <thread>
 #include <fstream>
 #include "hospitals.h"
 #include "pharmacies.h"
@@ -92,7 +94,7 @@ void hospitalsection()
     } while (choicev1 != 6);
 }
 
-// function to relocate patient
+// function to relocate patient (implemnted inside patients.cpp)
 void relocatepatientsection()
 {
     std::cout << "\nSelect Hospital to Relocate Patient" << "\n";
@@ -141,6 +143,7 @@ void relocatepatientsection()
     } while (choicev2 != 6);
 }
 
+// function for pharmacies section (delivery and billing)
 void pharmaciessection()
 {
     int hospitalchoice, pharmacychoice, drugchoice;
@@ -185,6 +188,7 @@ void pharmaciessection()
         return;
     }
 
+    std::this_thread::sleep_for(std::chrono::seconds(2));
     std::cout << "\nSelect any of the 20 Pharmacies:" << "\n";
     for (size_t i = 0; i < Pharmacies::pharmacieslist.size(); i++)
     {
@@ -202,6 +206,7 @@ void pharmaciessection()
 
     string pharmacyName = Pharmacies::pharmacieslist[pharmacychoice - 1];
 
+    std::this_thread::sleep_for(std::chrono::seconds(2));
     std::cout << "\nSelect a Prescription Drug that will be delievered:" << "\n";
     for (size_t i = 0; i < Pharmacies::prescriptiondruglist.size(); i++)
     {
@@ -240,8 +245,11 @@ void pharmacybillrecords()
         return;
     }
 
+    std::this_thread::sleep_for(std::chrono::seconds(2));
+    
     string line;
     std::cout << "\nPharmacy Billing Records" << "\n";
+    std::cout << "---------------------------" << "\n";
     while (getline(inputfile, line))
     {
         std::cout << line << "\n";
@@ -452,7 +460,7 @@ int main(int argc, char *argv[])
         std::cout << "1. Hospital" << "\n";
         // std::cout << "2. Relocate Patient" << "\n";
         std::cout << "2. Pharmacies" << "\n";
-        std::cout << "3. Pharmacies Billing Records" << "\n";
+        std::cout << "3. View Pharmacies Billing Records" << "\n";
         std::cout << "4. Patients" << "\n";
         std::cout << "5. Doctors" << "\n";
         std::cout << "6. Nurses" << "\n";
